@@ -11,7 +11,7 @@ import Moya
 import ObjectMapper
 
 /// Extension for processing Responses into Mappable objects through ObjectMapper
-public extension PrimitiveSequence where TraitType == SingleTrait, ElementType == Response {
+public extension PrimitiveSequence where Trait == SingleTrait, Element == Response {
 
     /// Maps data received from the signal into an object
     /// which implements the Mappable protocol and returns the result back
@@ -52,7 +52,7 @@ public extension PrimitiveSequence where TraitType == SingleTrait, ElementType =
 
 
 // MARK: - ImmutableMappable
-public extension PrimitiveSequence where TraitType == SingleTrait, ElementType == Response {
+public extension PrimitiveSequence where Trait == SingleTrait, Element == Response {
 
     /// Maps data received from the signal into an object
     /// which implements the ImmutableMappable protocol and returns the result back
